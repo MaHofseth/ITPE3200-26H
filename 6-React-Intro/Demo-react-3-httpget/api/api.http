@@ -1,0 +1,7 @@
+@api_HostAddress = http://localhost:5234
+
+### Get all items (returns ItemDto list)
+GET {{api_HostAddress}}/api/itemapi/itemlist
+Accept: application/json
+
+###

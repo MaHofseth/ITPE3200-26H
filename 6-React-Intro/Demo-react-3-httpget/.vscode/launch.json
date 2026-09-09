@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+    {
+        "name": ".NET Core Launch (web)", // Name of the launch configuration as shown in the debug panel
+        "type": "coreclr", // Type of the debugger to use, in this case, .NET Core CLR (Common Language Runtime)
+        "request": "launch", // Request type, here it is set to launch a new process
+        "preLaunchTask": "build", // Task to run before launching the debugger, typically to build the project
+        "program": "${workspaceFolder}/api/bin/Debug/net10.0/api.dll", // Path to the compiled .NET Core application (the entry point for the application)
+        "args": [],
+        "cwd": "${workspaceFolder}/api", // Current working directory
+        "stopAtEntry": false,
+        "serverReadyAction": {
+            "action": "openExternally",
+            "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+            "uriFormat": "%s/scalar/v1"
+        },
+        "env": { // Environment variables to set when launching the application
+            "ASPNETCORE_ENVIRONMENT": "Development",
+            "ASPNETCORE_URLS": "http://localhost:5234"
+        },
+    }
+    ]
+}
