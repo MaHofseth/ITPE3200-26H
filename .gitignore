@@ -1,2 +1,26 @@
+# .NET build output
 bin/
 obj/
+
+# Client libraries restored by LibMan on build (libman.json)
+wwwroot/lib/
+
+# SQLite databases created by Entity Framework at runtime
+*.db
+*.db-shm
+*.db-wal
+
+# Serilog log files
+Logs/
+
+# React / Node
+node_modules/
+dist/
+*.local
+
+# IDE and OS files
+.vs/
+*.user
+*.suo
+.idea/
+.DS_Store
